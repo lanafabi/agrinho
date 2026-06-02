@@ -1,113 +1,108 @@
-/* ======================================== */
-/* ACCORDION */
-/* ======================================== */
+// ============================
+// ACCORDION
+// ============================
 
-const accordionHeaders = document.querySelectorAll(".accordion-header");
+document.querySelectorAll(".accordion-btn")
+.forEach(botao => {
 
-accordionHeaders.forEach((header) => {
-  header.addEventListener("click", () => {
+botao.addEventListener("click", () => {
 
-    const content = header.nextElementSibling;
+const conteudo =
+botao.nextElementSibling;
 
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-
-  });
-});
-
-/* ======================================== */
-/* MODO ESCURO/CLARO */
-/* ======================================== */
-
-const themeButton = document.getElementById("toggle-theme");
-
-themeButton.addEventListener("click", () => {
-  document.body.classList.toggle("light-mode");
-});
-
-/* ======================================== */
-/* CONTROLE DE FONTE */
-/* ======================================== */
-
-let currentFontSize = 100;
-
-const increaseFontBtn = document.getElementById("increase-font");
-const decreaseFontBtn = document.getElementById("decrease-font");
-
-increaseFontBtn.addEventListener("click", () => {
-  currentFontSize += 10;
-  document.body.style.fontSize = currentFontSize + "%";
-});
-
-decreaseFontBtn.addEventListener("click", () => {
-  currentFontSize -= 10;
-
-  if (currentFontSize < 70) {
-    currentFontSize = 70;
-  }
-
-  document.body.style.fontSize = currentFontSize + "%";
-});
-
-/* ======================================== */
-/* LEITURA POR VOZ */
-/* ======================================== */
-
-const readButton = document.getElementById("read-page");
-const stopButton = document.getElementById("stop-reading");
-
-let speech;
-
-readButton.addEventListener("click", () => {
-
-  const mainContent = document.getElementById("main-content");
-
-  const text = mainContent.innerText;
-
-  speech = new SpeechSynthesisUtterance(text);
-
-  speech.lang = "pt-BR";
-  speech.rate = 1;
-
-  window.speechSynthesis.speak(speech);
+if(conteudo.style.display === "block"){
+conteudo.style.display = "none";
+}
+else{
+conteudo.style.display = "block";
+}
 
 });
 
-stopButton.addEventListener("click", () => {
-  window.speechSynthesis.cancel();
 });
 
-/* ======================================== */
-/* FORMULÁRIO */
-/* ======================================== */
+// ============================
+// ACESSIBILIDADE
+// ============================
 
-const form = document.querySelector(".modern-form");
+let tamanhoFonte = 16;
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+const body = document.body;
 
-  alert("Inscrição realizada com sucesso!");
+document
+.getElementById("aumentarFonte")
+.addEventListener("click", () => {
+
+tamanhoFonte += 2;
+body.style.fontSize = tamanhoFonte + "px";
+
 });
 
-/* ======================================== */
-/* COMENTÁRIOS */
-/* ======================================== */
+document
+.getElementById("diminuirFonte")
+.addEventListener("click", () => {
 
-const commentButton = document.querySelector(".comments-container button");
+tamanhoFonte -= 2;
+body.style.fontSize = tamanhoFonte + "px";
 
-commentButton.addEventListener("click", () => {
+});
 
-  const textarea = document.querySelector("textarea");
+document
+.getElementById("toggleTema")
+.addEventListener("click", () => {
 
-  if (textarea.value.trim() === "") {
-    alert("Digite um comentário antes de enviar.");
-    return;
-  }
+body.classList.toggle("dark");
 
-  alert("Comentário enviado com sucesso!");
-  textarea.value = "";
+});
+
+// ============================
+// LEITURA POR VOZ
+// ============================
+
+let fala;
+
+document
+.getElementById("lerConteudo")
+.addEventListener("click", () => {
+
+const texto =
+document.getElementById("conteudoPrincipal")
+.innerText;
+
+fala =
+new SpeechSynthesisUtterance(texto);
+
+fala.lang = "pt-BR";
+
+speechSynthesis.speak(fala);
+
+});
+
+document
+.getElementById("pararLeitura")
+.addEventListener("click", () => {
+
+speechSynthesis.cancel();
+
+});
+
+// ============================
+// COMENTÁRIOS
+// ============================
+
+document
+.getElementById("enviarComentario")
+.addEventListener("click", () => {
+
+const comentario =
+document.getElementById("comentario");
+
+if(comentario.value.trim() !== ""){
+
+alert("Comentário enviado!");
+
+comentario.value = "";
+
+}
 
 });

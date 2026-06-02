@@ -1,86 +1,104 @@
 # Pedaço do Céu
 
 ## Tema da Página
-Página moderna, responsiva e acessível para a confeitaria artesanal Pedaço do Céu, unindo tecnologia, inteligência artificial e tradição do campo.
+
+Confeitaria artesanal inteligente "Pedaço do Céu", integrando tradição, tecnologia, inovação digital e sustentabilidade.
 
 ---
 
 ## Objetivo da Página
-Apresentar os produtos da confeitaria de forma premium e tecnológica, destacando:
-- inovação digital;
-- automação inteligente;
-- rastreabilidade de ingredientes;
-- sustentabilidade;
-- experiência visual moderna e interativa.
 
----
+Apresentar a confeitaria Pedaço do Céu de forma moderna, interativa e acessível, destacando:
 
-## Tecnologias Utilizadas
-- HTML5
-- CSS3
-- JavaScript
-- SpeechSynthesis API
-
----
-
-## Funcionalidades
-- Hero section moderna
-- Cards informativos
-- Accordion expansível
-- Galeria de bolos
-- Formulário interativo
-- Área de comentários
-- Modo escuro/claro
-- Acessibilidade
-- Leitura por voz
-- Responsividade completa
+- Produção artesanal;
+- Automação de pedidos;
+- Monitoramento digital das fornadas;
+- Sustentabilidade;
+- Integração entre campo, tecnologia e inteligência artificial;
+- Exposição de bolos e preços;
+- Captação de clientes através de formulário e Instagram.
 
 ---
 
 ## Instruções de Uso
 
-### 1. Estrutura dos arquivos
-Coloque os arquivos na mesma pasta:
+### Alterar imagens
 
-/projeto
-│
-├── index.html
-├── style.css
-├── script.js
-├── Foto1.png
-├── Foto2.png
-└── Foto3.png
+Substitua os arquivos:
 
----
-
-### 2. Inserindo imagens
-Substitua:
 - Foto1.png
 - Foto2.png
 - Foto3.png
 
-pelas imagens desejadas.
+pelas imagens desejadas mantendo os mesmos nomes.
 
 ---
 
-### 3. Executando
-Abra o arquivo:
-index.html
+### Alterar valores dos bolos
 
-em qualquer navegador moderno.
+Os preços podem ser alterados diretamente no site.
+
+Clique sobre o valor e edite o texto.
 
 ---
 
-## Responsividade
-Compatível com:
-- celulares
-- tablets
-- notebooks
-- monitores ultrawide
+### Alterar Instagram
+
+No arquivo index.html altere:
+
+```html
+@alanafabiani
+```
+
+e o link:
+
+```html
+https://instagram.com/alanafabiani
+```
+
+---
+
+### Funcionalidades
+
+✔ Responsividade completa
+
+✔ Modo claro/escuro
+
+✔ Aumentar fonte
+
+✔ Diminuir fonte
+
+✔ Leitura por voz
+
+✔ Parar leitura
+
+✔ Accordion informativo
+
+✔ Comentários
+
+✔ Formulário
+
+✔ Cards modernos
+
+✔ Área para bolos e preços
+
+✔ Layout Premium
+
+---
+
+## Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- CSS Grid
+- Flexbox
+- SpeechSynthesis API
 
 ---
 
 ## Referências
+
 https://www.bemagro.com/beneficios-inteligencia-artificial-no-campo/
 
 https://www.agrolink.com.br/noticias/o-campo-conectado--como-a-ia-vem-transformando-o-agro_514351.html
