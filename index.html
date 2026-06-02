@@ -3,94 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Pedaço do Céu</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- ========================================= -->
-<!-- ACESSIBILIDADE -->
-<!-- ========================================= -->
-
 <div class="acessibilidade">
     <h4>Acessibilidade</h4>
-
     <button id="aumentarFonte">A+</button>
     <button id="diminuirFonte">A-</button>
-
     <button id="toggleTema">🌙/☀️</button>
-
     <button id="lerConteudo">🔊 Ler</button>
     <button id="pararLeitura">⏹ Parar</button>
 </div>
-
-<!-- ========================================= -->
-<!-- HEADER -->
-<!-- ========================================= -->
-
 <header>
-
     <div class="logo">
-
         <div class="logo-icon">🍰</div>
-
         <div>
             <h1>Pedaço do Céu</h1>
             <span>Confeitaria Inteligente</span>
         </div>
-
     </div>
-
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#bolos">Bolos</a>
         <a href="#contato">Contato</a>
     </nav>
-
 </header>
-
-<!-- ========================================= -->
-<!-- HERO -->
-<!-- ========================================= -->
-
 <section class="hero">
-
     <div class="hero-content">
-
         <h2>
             O sabor artesanal conectado à tecnologia.
         </h2>
-
         <p>
-            Bolos produzidos com carinho, rastreabilidade de ingredientes,
+            Bolos produtos com carinho, rastreabilidade de ingredientes,
             automação de pedidos e inovação digital para entregar uma experiência única.
         </p>
-
         <a href="#bolos" class="btn">
             Conhecer nossos bolos
         </a>
-
     </div>
-
 </section>
-
 <main id="conteudoPrincipal">
-
-<!-- ========================================= -->
-<!-- SOBRE -->
-<!-- ========================================= -->
-
 <section id="sobre" class="container">
-
     <h2 class="titulo-secao">
         Tradição + Tecnologia
     </h2>
-
     <div class="cards">
-
         <div class="card">
             <h3>🍰 Produção Artesanal</h3>
             <p>
@@ -99,7 +57,6 @@
                 e a rastreabilidade dos ingredientes.
             </p>
         </div>
-
         <div class="card">
             <h3>🤖 Automação</h3>
             <p>
@@ -107,7 +64,6 @@
                 eficiência e qualidade constante.
             </p>
         </div>
-
         <div class="card">
             <h3>🌱 Sustentabilidade</h3>
             <p>
@@ -115,224 +71,129 @@
                 reduzindo desperdícios.
             </p>
         </div>
-
     </div>
-
 </section>
-
-<!-- ========================================= -->
-<!-- ACCORDION -->
-<!-- ========================================= -->
-
 <section class="container">
-
     <h2 class="titulo-secao">
         Saiba Mais
     </h2>
-
     <div class="accordion">
-
         <button class="accordion-btn">
             Como utilizamos tecnologia?
         </button>
-
         <div class="accordion-content">
             <p>
                 Utilizamos automação de pedidos, monitoramento digital e
                 organização inteligente da produção.
             </p>
         </div>
-
         <button class="accordion-btn">
             Benefícios para os clientes
         </button>
-
         <div class="accordion-content">
             <p>
                 Maior qualidade, padronização, rastreabilidade e
                 agilidade nas entregas.
             </p>
         </div>
-
     </div>
-
 </section>
-
-<!-- ========================================= -->
-<!-- GALERIA DE BOLOS -->
-<!-- ========================================= -->
-
 <section id="bolos" class="container">
-
     <h2 class="titulo-secao">
         Nossos Bolos
     </h2>
-
     <p class="editar-info">
-        Clique nos valores para editar.
+        Clique nos nomes ou valores para editar.
     </p>
-
     <div class="galeria">
-
         <div class="bolo-card">
-
             <div class="imagem">
                 <img src="Foto1.png" alt="Bolo artesanal">
             </div>
-
-            <h3>Bolo Especial</h3>
-
+            <h3 contenteditable="true" class="nome-bolo">Bolo Especial</h3>
             <p contenteditable="true" class="valor">
                 R$ 89,90
             </p>
-
         </div>
-
         <div class="bolo-card">
-
             <div class="imagem">
                 <img src="Foto2.png" alt="Bolo confeitado">
             </div>
-
-            <h3>Bolo Premium</h3>
-
+            <h3 contenteditable="true" class="nome-bolo">Bolo Premium</h3>
             <p contenteditable="true" class="valor">
                 R$ 119,90
             </p>
-
         </div>
-
         <div class="bolo-card">
-
             <div class="imagem">
                 <img src="Foto3.png" alt="Bolo gourmet">
             </div>
-
-            <h3>Bolo Gourmet</h3>
-
+            <h3 contenteditable="true" class="nome-bolo">Bolo Gourmet</h3>
             <p contenteditable="true" class="valor">
                 R$ 149,90
             </p>
-
         </div>
-
     </div>
-
 </section>
-
-<!-- ========================================= -->
-<!-- FORMULÁRIO -->
-<!-- ========================================= -->
-
 <section class="container grid-duplo">
-
     <div>
-
         <h2 class="titulo-secao">
             Inovação na Confeitaria
         </h2>
-
         <p>
             Venha conhecer melhor como a IA pode ser uma aliada para a venda de bolos em nossa cidade, entre em nosso site e veja opções de bolos.
         </p>
-
     </div>
-
     <aside class="form-card">
-
         <h3>Inscrição</h3>
-
         <form>
-
             <input type="text" placeholder="Nome">
-
             <input type="email" placeholder="E-mail">
-
             <input type="text" placeholder="Cidade">
-
             <input type="text" placeholder="Estado">
-
             <button type="submit">
                 Inscrever-se
             </button>
-
         </form>
-
     </aside>
-
 </section>
-
-<!-- ========================================= -->
-<!-- COMENTÁRIOS -->
-<!-- ========================================= -->
-
 <section class="container">
-
     <h2 class="titulo-secao">
         Comentários
     </h2>
-
     <textarea
         placeholder="Deixe seu comentário..."
         id="comentario">
     </textarea>
-
     <button id="enviarComentario" class="btn">
         Enviar
     </button>
-
 </section>
-
-<!-- ========================================= -->
-<!-- INSTAGRAM -->
-<!-- ========================================= -->
-
 <section id="contato" class="container">
-
     <div class="instagram-card">
-
         <h2>Instagram Oficial</h2>
-
         <p>@alanafabiani</p>
-
         <a
             href="https://instagram.com/alanafabiani"
             target="_blank"
             class="btn">
-
             Chamar no Instagram
-
         </a>
-
     </div>
-
 </section>
-
 </main>
-
-<!-- ========================================= -->
-<!-- FOOTER -->
-<!-- ========================================= -->
-
 <footer>
-
     <p>
         AgroFuturo 2026 ° Conectando a inteligência tecnologia à terra de forma sustentável
     </p>
-
     <h4>Referências utilizadas</h4>
-
     <p>
         https://www.bemagro.com/beneficios-inteligencia-artificial-no-campo/
     </p>
-
     <p>
         https://www.agrolink.com.br/noticias/o-campo-conectado--como-a-ia-vem-transformando-o-agro_514351.html
     </p>
-
 </footer>
-
 <script src="script.js"></script>
-
 </body>
 </html>
